@@ -3,6 +3,17 @@ PackratVersion: 0.4.9.3
 RVersion: 3.5.1
 Repos: CRAN=https://cran.rstudio.com/
 
+Package: MASS
+Source: CRAN
+Version: 7.3-50
+Hash: e8001243da35880bd81391d80eb4eeae
+
+Package: Matrix
+Source: CRAN
+Version: 1.2-14
+Hash: 521aa8772a1941dfdb007bf532d19dde
+Requires: lattice
+
 Package: R6
 Source: CRAN
 Version: 2.2.2
@@ -39,6 +50,11 @@ Source: CRAN
 Version: 1.3.4
 Hash: ff2840dd9b0d563fc80377a5a45510cd
 
+Package: dichromat
+Source: CRAN
+Version: 2.0-0
+Hash: 08eed0c80510af29bb15f840ccfe37ce
+
 Package: digest
 Source: CRAN
 Version: 0.6.16
@@ -53,8 +69,8 @@ Package: ggplot2
 Source: CRAN
 Version: 3.0.0
 Hash: 8332448b76ff31472a1bf6dd31fcddb1
-Requires: digest, gtable, lazyeval, plyr, reshape2, rlang, scales,
-    tibble, viridisLite, withr
+Requires: MASS, digest, gtable, lazyeval, mgcv, plyr, reshape2, rlang,
+    scales, tibble, viridisLite, withr
 
 Package: glue
 Source: CRAN
@@ -71,6 +87,11 @@ Source: CRAN
 Version: 0.3
 Hash: ecf589b42cd284b03a4beb9665482d3e
 
+Package: lattice
+Source: CRAN
+Version: 0.20-35
+Hash: 26b9d7f0d0cb4e1d1bbb97f867c82d89
+
 Package: lazyeval
 Source: CRAN
 Version: 0.2.1
@@ -81,11 +102,23 @@ Source: CRAN
 Version: 1.5
 Hash: bdc4d48c3135e8f3b399536ddf160df4
 
+Package: mgcv
+Source: CRAN
+Version: 1.8-24
+Hash: a56dfc15ea064de70627f483af3bfa6f
+Requires: Matrix, nlme
+
 Package: munsell
 Source: CRAN
 Version: 0.5.0
 Hash: 247d1c1d72f3072563912ef860758624
 Requires: colorspace
+
+Package: nlme
+Source: CRAN
+Version: 3.1-137
+Hash: 6166071071587a867cbe534e84fc5c0c
+Requires: lattice
 
 Package: packrat
 Source: CRAN
@@ -101,13 +134,13 @@ Requires: cli, crayon, fansi, rlang, utf8
 Package: plyr
 Source: CRAN
 Version: 1.8.4
-Hash: 05d65ee369a267f0d0c56604000c69b5
+Hash: c55fb89c35c97156ff505fc90346110f
 Requires: Rcpp
 
 Package: reshape2
 Source: CRAN
 Version: 1.4.3
-Hash: a08472524968be4e233b4c8d0ae5aef1
+Hash: 79564c7d36fe3a861158337bc5cc564b
 Requires: Rcpp, plyr, stringr
 
 Package: rlang
@@ -118,7 +151,7 @@ Hash: 49b735b7b1d14f561d21cce12c6703df
 Package: scales
 Source: CRAN
 Version: 1.0.0
-Hash: 17b6945d25b9288cdf03f5e5005842dc
+Hash: ab76ed9f38e6927cb2c772ffc921f72e
 Requires: R6, RColorBrewer, Rcpp, labeling, munsell, viridisLite
 
 Package: stringi
