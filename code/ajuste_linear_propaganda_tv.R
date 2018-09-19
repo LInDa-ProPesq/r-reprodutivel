@@ -1,5 +1,5 @@
 packrat::status()
-#packrat::restore()
+packrat::restore()
 packrat::snapshot()
 #install.packages("ggplot2"); 
 
