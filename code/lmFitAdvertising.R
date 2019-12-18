@@ -3,7 +3,7 @@
 #########################################################
 
 # read in the data
-adsData<- read.csv("Advertising2.csv")
+adsData<- read.csv("./data/Advertising2.csv")
 
 # processing (remove outlier)
 outlierIndex <- which(adsData$TV < 0)

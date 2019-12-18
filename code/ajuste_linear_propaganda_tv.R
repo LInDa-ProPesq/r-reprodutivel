@@ -50,4 +50,4 @@ ggplot(adsData, aes(x=TV, y=Sales)) + geom_point(col="darkorange") +
   geom_abline(intercept = lmFitCoef[1], slope = lmFitCoef[2], col="blue") +
   ylab("Vendas (por mil unidades)") + xlab("Orçamento de TV (por mil dólares)")
 dev.off()
-
+ 
